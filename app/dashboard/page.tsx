@@ -1,7 +1,14 @@
-import Navbar from "./Navbar"
+import Navbar from "@/components/Navbar"
 
 export default function Page() {
   return(
-    <Navbar />
+    <>
+      <head>
+        <title>Dashboard</title>
+      </head>
+      <body>
+        <Navbar /> 
+      </body>
+    </>
   )
 }
