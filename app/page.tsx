@@ -1,3 +1,17 @@
-export default function Page() {
-  return <h1>Hello, Home page!</h1>
+import React from 'react'
+import Login from '@/components/Login'
+
+const page = () => {
+  return (
+    <>
+      <head>
+        <title>PLN UIP Nusra Single Sign On (SSO)</title>
+      </head>
+      <body>
+        <Login />
+      </body>
+    </>
+  )
 }
+
+export default page

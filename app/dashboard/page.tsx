@@ -1,4 +1,14 @@
-// `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
+import Navbar from "@/components/Navbar"
+
 export default function Page() {
-  return <h1>Hello, Dashboard Page!</h1>
+  return(
+    <>
+      <head>
+        <title>Dashboard</title>
+      </head>
+      <body>
+        <Navbar /> 
+      </body>
+    </>
+  )
 }
