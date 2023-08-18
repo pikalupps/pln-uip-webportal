@@ -13,7 +13,8 @@ const Navbar = () => {
         </Link>
         <ul className='xl:flex hidden text-sm gap-7'>
           {NavLinks.map((link) => (
-            <Link href={link.href} key={link.key}>{link.text}</Link>
+            <Link className='hover:text-sky-700' 
+            href={link.href} key={link.key}>{link.text}</Link>
           ))}
         </ul>
       </div>
