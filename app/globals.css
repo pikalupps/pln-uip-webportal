@@ -44,7 +44,7 @@ body {
 }
 
 .card {
-  @apply border rounded-md p-10
+  @apply border rounded-md p-10 w-fit h-fit
 }
 
 .input-form {
