@@ -9,7 +9,7 @@ const Login = () => {
         </div>
         <form action="" className='flex flex-col gap-4 w-80'>
           <div>
-            <input className='input-form' type="text" placeholder='Username'/>
+            <input id='username' className='input-form' type="text" placeholder='Username'/>
           </div>
           <div>
             <input className='input-form' type="text" placeholder='Password'/>
