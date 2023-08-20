@@ -38,3 +38,15 @@ body {
 .navbar {
   @apply py-5 px-48 border-b gap-4;
 }
+
+.button {
+  @apply border bg-sky-600 text-white py-2 rounded-md cursor-pointer
+}
+
+.card {
+  @apply border rounded-md p-10 w-fit h-fit
+}
+
+.input-form {
+  @apply p-2 w-full
+}

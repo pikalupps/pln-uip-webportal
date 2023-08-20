@@ -1,14 +1,14 @@
 import React from 'react'
-import Home from '@/components/Home'
+import Login from '@/components/Login'
 
 const page = () => {
   return (
     <>
       <head>
-        <title>PLN UIP Nusa Tenggara</title>
+        <title>Single Sign On | PLN UIP Nusa Tenggara</title>
       </head>
       <body>
-        <Home />     
+        <Login />
       </body>
     </>
   )
