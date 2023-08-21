@@ -1,14 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 import { NavLinks } from '@/constant'
+import Image from 'next/image'
 
 const Navbar = () => {
   return (
     <nav className='flexBetween navbar bg-transparent'>
       <div className='flex-1 flexBetween gap-10'>
-        <Link href="/dashboard">
-          <h1>
-            PLN UIP NUSRA
+        <Link href="/dashboard" className='flex items-center'>
+          <Image 
+            alt='logo'
+            src='/pln-logo3.png'
+            quality="100"
+            width={85}
+            height={20}>
+          </Image>
+          <h1 className='font-bold'>
+            UIP NUSRA
           </h1>
         </Link>
         <ul className='xl:flex hidden text-sm gap-7'>

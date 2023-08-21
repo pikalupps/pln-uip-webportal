@@ -12,6 +12,7 @@
 
 body {
   font-family: Inter;
+  @apply bg-gray-50
 }
 
 .flexCenter {
@@ -52,6 +53,22 @@ body {
 }
 
 .bg {
-  background-image: url('/background.png');
-  background-size: cover;
+  background-image: url('/bg.png');
+  background-size:cover;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-sky-800 pt-20 pb-10
+}
+
+.title {
+  @apply text-4xl font-extrabold text-white
+}
+
+.textTittle {
+  @apply font-semibold text-sky-800 text-xl
+}
+
+.textSub {
+  @apply text-gray-500 text-sm
 }

@@ -6,20 +6,21 @@ const Card = (props:any) => {
 
   return (
     <div>
-      <div className='border rounded-md p-8 text-center'>
-        <Image 
-          alt={props.alt}
-          src={props.src}
-          quality="100"
-          width={200}
-          height={200}
-          className='mb-2'>
-        </Image>
+      <div className='flex-1 drop-shadow rounded-md p-8 text-center bg-white'>
+        <div className='flex justify-center mb-5'>
+          <Image 
+            alt={props.alt}
+            src={props.src}
+            quality="100"
+            width={100}
+            height={100}>
+          </Image>
+        </div>
 
-        <div className=''>
-          <h1>{props.alt}</h1>
-          <p  className='mb-4'>Address</p>
-          <Link className='button px-4' href='/' key='OpenMap'>Open Map</Link>
+        <div>
+          <h1 className='textTittle'>{props.alt}</h1>
+          <p className='textSub'>{props.address}</p>
+          <p className='textSub'>{props.city}</p>
         </div> 
       </div>
     </div>
