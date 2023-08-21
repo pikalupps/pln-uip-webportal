@@ -4,7 +4,7 @@ import { NavLinks } from '@/constant'
 
 const Navbar = () => {
   return (
-    <nav className='flexBetween navbar'>
+    <nav className='flexBetween navbar bg-transparent'>
       <div className='flex-1 flexBetween gap-10'>
         <Link href="/dashboard">
           <h1>
