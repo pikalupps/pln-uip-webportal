@@ -5,9 +5,9 @@ const Background = () => {
   return (
     <Image 
       alt='background'
-      src='/background.jpg'
-      width={1000}
-      height={1000}>
+      src='/bg.png'
+      quality="100"
+      layout='fill'>
     </Image>
   )
 }

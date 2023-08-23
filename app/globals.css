@@ -12,6 +12,7 @@
 
 body {
   font-family: Inter;
+  @apply bg-gray-50
 }
 
 .flexCenter {
@@ -36,17 +37,47 @@ body {
 
 /* Navbar */
 .navbar {
-  @apply py-5 px-48 border-b gap-4;
+  @apply py-5 px-48 gap-4 text-cyan-900 w-screen;
+}
+
+/* Footer */
+.footer {
+  @apply py-5 px-48 text-cyan-900 w-screen;
 }
 
 .button {
-  @apply border bg-sky-600 text-white py-2 rounded-md cursor-pointer
+  @apply border bg-cyan-500 text-white py-2 rounded-md cursor-pointer hover:bg-cyan-700
 }
 
 .card {
-  @apply border rounded-md p-10 w-fit h-fit
+  @apply rounded-md p-10 w-fit h-fit
+}
+
+.card2 {
+  @apply rounded-md w-full h-full
 }
 
 .input-form {
-  @apply p-2 w-full
+  @apply p-2 w-full border rounded-md bg-cyan-50
+}
+
+.bg {
+  background-image: url('/bg.png');
+  background-size:cover;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-sky-800 pt-20 pb-10
+}
+
+.title {
+  @apply text-4xl font-extrabold text-white
+}
+
+.textTittle {
+  @apply font-semibold text-sky-800 text-xl
+}
+
+.textSub {
+  @apply text-gray-500 text-sm
 }
