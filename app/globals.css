@@ -37,19 +37,28 @@ body {
 
 /* Navbar */
 .navbar {
-  @apply py-5 px-48 gap-4 text-white w-screen;
+  @apply py-5 px-48 gap-4 text-cyan-900 w-screen;
+}
+
+/* Footer */
+.footer {
+  @apply py-5 px-48 text-cyan-900 w-screen;
 }
 
 .button {
-  @apply border bg-sky-600 text-white py-2 rounded-md cursor-pointer
+  @apply border bg-cyan-500 text-white py-2 rounded-md cursor-pointer hover:bg-cyan-700
 }
 
 .card {
-  @apply border rounded-md p-10 w-fit h-fit
+  @apply rounded-md p-10 w-fit h-fit
+}
+
+.card2 {
+  @apply rounded-md w-full h-full
 }
 
 .input-form {
-  @apply p-2 w-full
+  @apply p-2 w-full border rounded-md bg-cyan-50
 }
 
 .bg {
