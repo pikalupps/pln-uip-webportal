@@ -1,10 +1,23 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Login = () => {
   return (
-    <div className='bg-gray-100 w-screen h-screen flex justify-center items-center'>
-      <div className='card text-center'>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='card drop-shadow-md bg-white text-center'>
         <div>
+          <div className='flex items-center justify-center'>
+            <Image 
+              alt='logo'
+              src='/pln-logo3.png'
+              quality="100"
+              width={85}
+              height={20}>
+            </Image>
+            <h1 className='font-bold'>
+              UIP NUSRA
+            </h1>
+          </div>
           <h1 className='pb-5'>Single sign-on</h1>
         </div>
         <form action="" className='flex flex-col gap-4 w-80'>
