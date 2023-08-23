@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='flexCenter footer bg-white border-t'>
+      <p>Copyright © 2023 PT PLN (Persero) UIP Nusa Tenggara</p>
+    </div>
   )
 }
 
