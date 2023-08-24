@@ -2,7 +2,7 @@ export const NavLinks = [
   { href: '/dashboard', key: 'Home', text: 'Home' },
   { href: '/dashboard', key: 'Gallery', text: 'Gallery' },
   { href: '/dashboard/room', key: 'Denah', text: 'Denah Ruang' },
-  { href: '/dashboard', key: 'Kontak Kami', text: 'Kontak Kami' },
+  { href: '/dashboard/contact', key: 'Kontak Kami', text: 'Kontak Kami' },
 ];
 
 export const Unit = [

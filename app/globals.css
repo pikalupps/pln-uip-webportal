@@ -67,7 +67,7 @@ body {
 }
 
 .section-title {
-  @apply text-3xl font-bold text-sky-800 pt-20 pb-10
+  @apply text-3xl font-bold text-cyan-800 pt-20 pb-10
 }
 
 .title {
@@ -75,9 +75,13 @@ body {
 }
 
 .textTittle {
-  @apply font-semibold text-sky-800 text-xl
+  @apply font-semibold text-cyan-800 text-xl
 }
 
 .textSub {
   @apply text-gray-500 text-sm
+}
+
+.iconContact {
+  @apply w-12 h-12 text-cyan-800 mr-4
 }

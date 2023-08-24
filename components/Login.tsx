@@ -1,7 +1,16 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 const Login = () => {
+  const router = useRouter();
+
+  function handleClick (){
+    router.push('/dashboard')
+  }
+
   return (
     <div className='w-screen h-screen flex justify-center items-center'>
       <div className='card drop-shadow-md bg-white text-center'>
@@ -27,7 +36,9 @@ const Login = () => {
           <div>
             <input className='input-form' type="text" placeholder='Password'/>
           </div>
-          <input className='button' type="button" value="Sign In" />
+          <button type="button" className='button' onClick={() => handleClick()}>
+            Sign In
+          </button>
         </form>
       </div>
     </div>
