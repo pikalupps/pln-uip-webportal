@@ -37,7 +37,7 @@ body {
 
 /* Navbar */
 .navbar {
-  @apply py-5 px-48 gap-4 text-cyan-900 w-screen;
+  @apply py-2 px-48 gap-4 text-cyan-900 w-screen;
 }
 
 /* Footer */
@@ -71,7 +71,7 @@ body {
 }
 
 .title {
-  @apply text-4xl font-extrabold text-white
+  @apply text-2xl text-cyan-900
 }
 
 .textTittle {

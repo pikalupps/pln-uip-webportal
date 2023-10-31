@@ -1,17 +1,18 @@
-import React from 'react'
-import Login from '@/components/Login'
+import { options } from "./api/auth/[...nextauth]/option";
+import { getServerSession } from "next-auth/next";
 
-const page = () => {
+export default async function Home() {
+  const session = await getServerSession(options)
+
   return (
     <>
-      <head>
-        <title>Single Sign On | PLN UIP Nusa Tenggara</title>
-      </head>
-      <body>
-        <Login />
-      </body>
+    {
+      session? (
+        <div></div>
+      ) : (
+        <div></div>
+      )
+    }
     </>
   )
 }
-
-export default page
