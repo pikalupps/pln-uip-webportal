@@ -1,5 +1,5 @@
+import SignUpForm from '@/components/SignUpForm'
 import React from 'react'
-import Login from '@/components/Login'
 
 const page = () => {
   return (
@@ -8,7 +8,7 @@ const page = () => {
         <title>Single Sign On | PLN UIP Nusa Tenggara</title>
       </head>
       <body>
-        <Login />
+        <SignUpForm />
       </body>
     </>
   )
