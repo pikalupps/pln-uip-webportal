@@ -30,7 +30,13 @@ const Navbar = async () => {
           ))}
 
           {session && session.user?.email ? (
-            <Link className='button px-3' href="/auth/signout">Keluar</Link>
+            <Image
+              alt='profile'
+              src='/profile.png'
+              quality="100"
+              width={30}
+              height={30}>
+            </Image>
           ) : (
             <Link className='button px-3' href="/auth/signin">Masuk</Link>
           )}
