@@ -5,6 +5,8 @@ import Image from 'next/image'
 import { signUp } from '@/app/actions/users/SignUp';
 
 const SignUpForm = () => {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -12,7 +14,9 @@ const SignUpForm = () => {
 
   const handleSubmit = async () => {
     setMassage("Signing up...");
-    const massage = await signUp(email, password);
+    const massage = await signUp(firstName, lastName, email, password);
+
+    //console.log(firstName, lastName, email, password)
     setMassage(massage)
   }
 
@@ -36,13 +40,19 @@ const SignUpForm = () => {
         </div>
         <form action="" className='flex flex-col gap-4 w-80'>
           <div>
-            <input id='username' className='input-form' type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className='input-form' type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} placeholder='Nama Depan' />
           </div>
           <div>
-            <input className='input-form' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input className='input-form' type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} placeholder='Nama Belakang' />
+          </div>
+          <div>
+            <input className='input-form' type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' />
+          </div>
+          <div>
+            <input className='input-form' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Password' />
           </div>
           <button type="button" className='button' onClick={handleSubmit}>
-            Sign In
+            Daftar
           </button>
           <p>{message}</p>
         </form>

@@ -26,7 +26,7 @@ const SignInForm = () => {
       })
 
       if (!signInResponse || signInResponse.ok !== true) {
-        setMassage("Invalid credentials")
+        setMassage("Periksa Kembali Email dan Password Anda!")
       } else {
         router.refresh();
       }
@@ -34,14 +34,12 @@ const SignInForm = () => {
     } catch (err) {
       console.log(err)
     }
-
-    setMassage(message)
   }
 
   useEffect(() => {
     if (status === 'authenticated') {
       router.refresh();
-      router.push("/")
+      router.push("/dashboard")
     }
   }, [status])
 
@@ -65,7 +63,7 @@ const SignInForm = () => {
         </div>
         <form action="" className='flex flex-col gap-4 w-80'>
           <div>
-            <input id='username' className='input-form' type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className='input-form' type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
             <input className='input-form' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
